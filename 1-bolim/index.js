@@ -70,3 +70,45 @@
 // }
 // console.log(res);
 // console.log(reskatta);
+
+// 15 - masala
+// let a = Number(prompt("1 sonni kiriting"));
+// let b = Number(prompt("2 sonni kiriting"));
+// let c = Number(prompt("3 sonni kiriting"));
+// let res;
+// let reskatta;
+// if (a < b < c) {
+//   res = b;
+//   reskatta = c;
+// } else if (a > b > c) {
+//   res = b;
+//   reskatta = a;
+// } else if (a < c < b) {
+//   res = c;
+//   reskatta = b;
+// }
+// console.log(res);
+// console.log(reskatta);
+
+// 16-masala
+// let a = Number(prompt("1 sonni kiriting"));
+// let b = Number(prompt("2 sonni kiriting"));
+// let c = Number(prompt("3 sonni kiriting"));
+// let res1;
+// let res2;
+// let res3;
+// if (a <= b <= c) {
+//   res1 = a * 2;
+//   res2 = b * 2;
+//   res3 = c * 2;
+// }
+// if (a > b || b > c) {
+//   res1 = "-a";
+//   res2 = " -b";
+//   res3 = "-c";
+// } else {
+//   console.log(tugadi);
+// }
+// console.log(res1);
+// console.log(res2);
+// console.log(res3);
