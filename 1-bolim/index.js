@@ -112,3 +112,55 @@
 // console.log(res1);
 // console.log(res2);
 // console.log(res3);
+
+// 18-masala
+// let a = Number(prompt("1 sonni kiriting"));
+// let b = Number(prompt("2 sonni kiriting"));
+// let c = Number(prompt("3 sonni kiriting"));
+// let res;
+// if (a == b) {
+//   res = "3-tartib raqamda";
+// } else if (a == c) {
+//   res = "2-tartib raqamda";
+// } else if (b == c) {
+//   res = "4-tartib raqamda";
+// } else {
+//   res = "hech qaysi son bir-biriga teng emas";
+// }
+// console.log(res);
+
+// 19-masala
+// let son1 = prompt("1-sonni kirting");
+// let son2 = prompt("2-sonni kriting");
+// let son3 = prompt("3-sonni kiriting");
+// let son4 = prompt("4-sonni kiriting");
+// let res;
+// if (son1 == son2 && son2 == son3) {
+//   res = "4-raqam";
+// } else if (son1 == son2 && son2 == son4) {
+//   res = "3-raqam";
+// } else if (son2 == son3 && son3 == son4) {
+//   res = "1-raqam";
+// } else if (son1 == son3 && son3 == son4) {
+//   res = "2-raqam";
+// }
+// console.log(res);
+
+let son1 = Number(prompt("1-sonni kirting"));
+let son2 = Number(prompt("2-sonni kriting"));
+let son3 = Number(prompt("3-sonni kiriting"));
+let son4 = Number(prompt("4-sonni kiriting"));
+
+let sonlar = [son1, son2, son3, son4];
+
+let nechtadanligi = {};
+sonlar.forEach((son) => (nechtadanligi[son] = (nechtadanligi[son] || 0) + 1));
+
+let res;
+
+sonlar.forEach((son, index) => {
+  if (nechtadanligi[son] == 1) {
+    res = `${i + 1}-raqam`;
+  }
+});
+console.log(res);
