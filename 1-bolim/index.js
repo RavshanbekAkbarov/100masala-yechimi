@@ -167,29 +167,29 @@
 
 // 20-masala
 // A nuqtasi
-// let ax = +prompt("A nuqtaning x koordinatasini kiriting:");
-// let ay = +prompt("A nuqtaning y koordinatasini kiriting:");
+let ax = +prompt("A nuqtaning x koordinatasini kiriting:");
+let ay = +prompt("A nuqtaning y koordinatasini kiriting:");
 
-// // B nuqtasi
-// let bx = +prompt("B nuqtaning x koordinatasini kiriting:");
-// let by = +prompt("B nuqtaning y koordinatasini kiriting:");
+// B nuqtasi
+let bx = +prompt("B nuqtaning x koordinatasini kiriting:");
+let by = +prompt("B nuqtaning y koordinatasini kiriting:");
 
-// // C nuqtasi
-// let cx = +prompt("C nuqtaning x koordinatasini kiriting:");
-// let cy = +prompt("C nuqtaning y koordinatasini kiriting:");
+// C nuqtasi
+let cx = +prompt("C nuqtaning x koordinatasini kiriting:");
+let cy = +prompt("C nuqtaning y koordinatasini kiriting:");
 
-// const AdanBgacha = Math.sqrt((bx - ax) ** 2 + (by - ay) ** 2);
-// const AdanCgacha = Math.sqrt((cx - ax) ** 2 + (cy - ay) ** 2);
+const AdanBgacha = Math.sqrt((bx - ax) ** 2 + (by - ay) ** 2);
+const AdanCgacha = Math.sqrt((cx - ax) ** 2 + (cy - ay) ** 2);
 
-// let res;
+let res1;
 
-// if (AdanBgacha < AdanCgacha) {
-//   res = `A nuqtasiga eng yaqin nuqta B. Masofa: ${AdanBgacha}`;
-// } else {
-//   res = `A nuqtasiga eng yaqin nuqta C. Masofa: ${AdanCgacha}`;
-// }
+if (AdanBgacha < AdanCgacha) {
+  res = `A nuqtasiga eng yaqin nuqta B. Masofa: ${AdanBgacha}`;
+} else {
+  res = `A nuqtasiga eng yaqin nuqta C. Masofa: ${AdanCgacha}`;
+}
 
-// console.log(res);
+console.log(res);
 
 let x = +prompt("x o'qidagi qiymatni kiriting");
 let y = +prompt("y o'qidagi qiymatni kiriting");
