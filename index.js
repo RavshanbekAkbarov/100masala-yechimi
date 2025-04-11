@@ -252,14 +252,42 @@
 // console.log(x4, y4);
 
 // 24-masala
-let x = +prompt("x ning qiymatini kiriting");
+// let x = +prompt("x ning qiymatini kiriting");
+
+// let res;
+// if (x > 0) {
+//   res = 2 * Math.sin(x);
+// } else if (x <= 0) {
+//   res = x - 6;
+// } else {
+//   res = "xato qiymat";
+// }
+// console.log(res);
+
+// 25-masala
+// let x = +prompt("x ning qiymatini kiriting");
+
+// let res;
+
+// if (x < -2 || x > 2) {
+//   res = 2 * x
+// } else {
+//   res=-3*x
+// }
+
+// console.log(res)
+
+// 27- masala
+
+let x = +prompt("x haqiqiy sonni kiriting");
 
 let res;
-if (x > 0) {
-  res = 2 * Math.sin(x);
-} else if (x <= 0) {
-  res = x - 6;
-} else {
-  res = "xato qiymat";
+
+if (x < 0) {
+  res = 0;
+} else if (x % 2 == 0) {
+  res = 1;
+} else if (x % 2 == 1) {
+  res = "-1";
 }
 console.log(res);
