@@ -279,15 +279,28 @@
 
 // 27- masala
 
-let x = +prompt("x haqiqiy sonni kiriting");
+// let x = +prompt("x haqiqiy sonni kiriting");
+
+// let res;
+
+// if (x < 0) {
+//   res = 0;
+// } else if (x % 2 == 0) {
+//   res = 1;
+// } else if (x % 2 == 1) {
+//   res = "-1";
+// }
+// console.log(res);
+
+// 28-masala
+let yil = +prompt("Yil qiymatini kiriting");
 
 let res;
-
-if (x < 0) {
-  res = 0;
-} else if (x % 2 == 0) {
-  res = 1;
-} else if (x % 2 == 1) {
-  res = "-1";
+if ((yil % 4 == 0 && yil % 100 !== 0) || yil % 400 == 0) {
+  res = "Kabisa yili";
+} else {
+  res = "Kabisa yili emas";
 }
 console.log(res);
+
+// 29-masala
