@@ -224,29 +224,42 @@
 // }
 // console.log(res);
 
-// 23-masala
-let x1 = +prompt("A nuqtaning x koordinatasini kiriting:");
-let y1 = +prompt("A nuqtaning y koordinatasini kiriting:");
-let x2 = +prompt("B nuqtaning x koordinatasini kiriting:");
-let y2 = +prompt("B nuqtaning y koordinatasini kiriting:");
-let x3 = +prompt("C nuqtaning x koordinatasini kiriting:");
-let y3 = +prompt("C nuqtaning y koordinatasini kiriting:");
+// // 23-masala
+// let x1 = +prompt("A nuqtaning x koordinatasini kiriting:");
+// let y1 = +prompt("A nuqtaning y koordinatasini kiriting:");
+// let x2 = +prompt("B nuqtaning x koordinatasini kiriting:");
+// let y2 = +prompt("B nuqtaning y koordinatasini kiriting:");
+// let x3 = +prompt("C nuqtaning x koordinatasini kiriting:");
+// let y3 = +prompt("C nuqtaning y koordinatasini kiriting:");
 
-let x4, y4;
+// let x4, y4;
 
-if (x1 == x2) {
-  x4 = x2;
-} else if (x1 == x3) {
-  x4 == x3;
+// if (x1 == x2) {
+//   x4 = x2;
+// } else if (x1 == x3) {
+//   x4 == x3;
+// } else {
+//   x4 = x1;
+// }
+
+// if (y1 == y2) {
+//   y4 = y2;
+// } else if (y1 == y3) {
+//   y4 = y3;
+// } else {
+//   y4 = y1;
+// }
+// console.log(x4, y4);
+
+// 24-masala
+let x = +prompt("x ning qiymatini kiriting");
+
+let res;
+if (x > 0) {
+  res = 2 * Math.sin(x);
+} else if (x <= 0) {
+  res = x - 6;
 } else {
-  x4 = x1;
+  res = "xato qiymat";
 }
-
-if (y1 == y2) {
-  y4 = y2;
-} else if (y1 == y3) {
-  y4 = y3;
-} else {
-  y4 = y1;
-}
-console.log(x4, y4);
+console.log(res);
