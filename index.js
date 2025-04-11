@@ -293,14 +293,21 @@
 // console.log(res);
 
 // 28-masala
-let yil = +prompt("Yil qiymatini kiriting");
+// let yil = +prompt("Yil qiymatini kiriting");
 
-let res;
-if ((yil % 4 == 0 && yil % 100 !== 0) || yil % 400 == 0) {
-  res = "Kabisa yili";
-} else {
-  res = "Kabisa yili emas";
-}
-console.log(res);
+// let res;
+// if ((yil % 4 == 0 && yil % 100 !== 0) || yil % 400 == 0) {
+//   res = "Kabisa yili";
+// } else {
+//   res = "Kabisa yili emas";
+// }
+// console.log(res);
 
-// 29-masala
+// 30-masala
+// let x = prompt("1 dan 999gacha bolgan sonlardan kiriting");
+
+// let honalar = x.length;
+// let juftliklar = x % 2 == 0 ? "juft" : "toq";
+// let res = `${honalar} honali ${juftliklar} son`;
+
+// console.log(res);
