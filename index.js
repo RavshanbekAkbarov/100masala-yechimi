@@ -366,47 +366,50 @@
 // }
 
 // 11-masala
-let yonalish = prompt("lakatr yonalishini kirting shimol-janub-sharq-garb");
-let komand = prompt(
-  "komanda bering   0-ongga burilish 1-chapga burilish 2-180 gradusga "
-);
+// let yonalish = prompt("lakatr yonalishini kirting shimol-janub-sharq-garb");
+// let komand = prompt(
+//   "komanda bering   0-ongga burilish 1-chapga burilish 2-180 gradusga "
+// );
 
-switch (komand) {
-  case "0": //o'ngga burilish
-    if (yonalish === "shimol") {
-      yonalish = "sharq";
-    } else if (yonalish === "sharq") {
-      yonalish = "janub";
-    } else if (yonalish === "janub") {
-      yonalish = "garb ";
-    } else if (yonalish === "garb") {
-      yonalish = "shimol";
-    }
-    break;
-  case "1": //chapga burilish
-    if (yonalish === "shimol") {
-      yonalish = " garb";
-    } else if (yonalish === "garb") {
-      yonalish = "janub";
-    } else if (yonalish === "janub") {
-      yonalish = "sharq";
-    } else if (yonalish === "sharq") {
-      yonalish = "shimol";
-    }
-    break;
-  case "2": //180 ga burilish
-    if (yonalish === "shimol") {
-      yonalish = "janub";
-    } else if (yonalish === "janub") {
-      yonalish = "shimol";
-    } else if (yonalish === "garb") {
-      yonalish = "sharq ";
-    } else if (yonalish === "sharq") {
-      yonalish = "garb";
-    }
-    break;
+// switch (komand) {
+//   case "0": //o'ngga burilish
+//     if (yonalish === "shimol") {
+//       yonalish = "sharq";
+//     } else if (yonalish === "sharq") {
+//       yonalish = "janub";
+//     } else if (yonalish === "janub") {
+//       yonalish = "garb ";
+//     } else if (yonalish === "garb") {
+//       yonalish = "shimol";
+//     }
+//     break;
+//   case "1": //chapga burilish
+//     if (yonalish === "shimol") {
+//       yonalish = " garb";
+//     } else if (yonalish === "garb") {
+//       yonalish = "janub";
+//     } else if (yonalish === "janub") {
+//       yonalish = "sharq";
+//     } else if (yonalish === "sharq") {
+//       yonalish = "shimol";
+//     }
+//     break;
+//   case "2": //180 ga burilish
+//     if (yonalish === "shimol") {
+//       yonalish = "janub";
+//     } else if (yonalish === "janub") {
+//       yonalish = "shimol";
+//     } else if (yonalish === "garb") {
+//       yonalish = "sharq ";
+//     } else if (yonalish === "sharq") {
+//       yonalish = "garb";
+//     }
+//     break;
 
-  default:
-    console.log("notog'ro komand");
-}
-console.log(`lakatr ${yonalish}ga qarab turibdi`);
+//   default:
+//     console.log("notog'ro komand");
+// }
+// console.log(`lakatr ${yonalish}ga qarab turibdi`);
+
+
+// 12-masala
