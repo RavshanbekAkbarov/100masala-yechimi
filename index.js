@@ -312,54 +312,101 @@
 
 // console.log(res);
 
-//tanlash opertorlariga doir masalalar
+//Tanlash opertorlariga doir masalalar
+
 // 10-masala
-let yonalish = prompt(
-  "roboting yonalishini kirting s-shimol-j-janub-q-sharq-g-garb"
-);
+// let yonalish = prompt(
+//   "roboting yonalishini kirting s-shimol-j-janub-q-sharq-g-garb"
+// );
+// let komand = prompt(
+//   "komanda bering 0-togriga 1-chapga burilish 2-ongga burilish "
+// );
+
+// switch (komand) {
+//   case "0":
+//     console.log(`robot hozir ${yonalish}ga qarab ketmoqda`);
+//     break;
+//   case "1": //agar robot shimoldan chapga burilsa garbga qaraydi
+//     if (yonalish === "shimol") {
+//       yonalish = " garb";
+//     } else if (yonalish === "garb") {
+//       //garbdan chapga burilsa janubga
+//       yonalish = "janub";
+//     } else if (yonalish === "janub") {
+//       //janubdan chapga sharq
+//       yonalish = "sharq";
+//     } else if (yonalish === "sharq") {
+//       //sharqdan chapga shimol
+//       yonalish = "shimol";
+//     }
+//     console.log(
+//       `Robot chapga burildi ,hozirgi yonalish ${yonalish}ga qarab ketmoda`
+//     );
+//     break;
+//   case "2":
+//     if (yonalish === "shimol") {
+//       //shimoldan ong sharq
+//       yonalish = "sharq";
+//     } else if (yonalish === "sharq") {
+//       //sharqdan ong janub
+//       yonalish = "janub";
+//     } else if (yonalish === "janub") {
+//       // janubdan ong garb
+//       yonalish = "garb ";
+//     } else if (yonalish === "garb") {
+//       //garbdan ong shimol
+//       yonalish = "shimol";
+//     }
+//     console.log(
+//       `Robot o'ngga burildi ,hozirgi yonalish ${yonalish}ga  qarab ketmoda`
+//     );
+//     break;
+//   default:
+//     console.log("notog'ro komand");
+// }
+
+// 11-masala
+let yonalish = prompt("lakatr yonalishini kirting shimol-janub-sharq-garb");
 let komand = prompt(
-  "komanda bering 0-togriga 1-chapga burilish 2-ongga burilish "
+  "komanda bering   0-ongga burilish 1-chapga burilish 2-180 gradusga "
 );
 
 switch (komand) {
-  case "0":
-    console.log(`robot hozir ${yonalish}ga qarab ketmoqda`);
+  case "0": //o'ngga burilish
+    if (yonalish === "shimol") {
+      yonalish = "sharq";
+    } else if (yonalish === "sharq") {
+      yonalish = "janub";
+    } else if (yonalish === "janub") {
+      yonalish = "garb ";
+    } else if (yonalish === "garb") {
+      yonalish = "shimol";
+    }
     break;
-  case "1": //agar robot shimoldan chapga burilsa garbga qaraydi
+  case "1": //chapga burilish
     if (yonalish === "shimol") {
       yonalish = " garb";
     } else if (yonalish === "garb") {
-      //garbdan chapga burilsa janubga
       yonalish = "janub";
     } else if (yonalish === "janub") {
-      //janubdan chapga sharq
       yonalish = "sharq";
     } else if (yonalish === "sharq") {
-      //sharqdan chapga shimol
       yonalish = "shimol";
     }
-    console.log(
-      `Robot chapga burildi ,hozirgi yonalish ${yonalish}ga qarab ketmoda`
-    );
     break;
-  case "2":
+  case "2": //180 ga burilish
     if (yonalish === "shimol") {
-      //shimoldan ong sharq
-      yonalish = "sharq";
-    } else if (yonalish === "sharq") {
-      //sharqdan ong janub
       yonalish = "janub";
     } else if (yonalish === "janub") {
-      // janubdan ong garb
-      yonalish = "garb ";
-    } else if (yonalish === "garb") {
-      //garbdan ong shimol
       yonalish = "shimol";
+    } else if (yonalish === "garb") {
+      yonalish = "sharq ";
+    } else if (yonalish === "sharq") {
+      yonalish = "garb";
     }
-    console.log(
-      `Robot o'ngga burildi ,hozirgi yonalish ${yonalish}ga  qarab ketmoda`
-    );
     break;
+
   default:
     console.log("notog'ro komand");
 }
+console.log(`lakatr ${yonalish}ga qarab turibdi`);
