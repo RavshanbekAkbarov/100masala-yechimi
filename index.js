@@ -311,3 +311,55 @@
 // let res = `${honalar} honali ${juftliklar} son`;
 
 // console.log(res);
+
+//tanlash opertorlariga doir masalalar
+// 10-masala
+let yonalish = prompt(
+  "roboting yonalishini kirting s-shimol-j-janub-q-sharq-g-garb"
+);
+let komand = prompt(
+  "komanda bering 0-togriga 1-chapga burilish 2-ongga burilish "
+);
+
+switch (komand) {
+  case "0":
+    console.log(`robot hozir ${yonalish}ga qarab ketmoqda`);
+    break;
+  case "1": //agar robot shimoldan chapga burilsa garbga qaraydi
+    if (yonalish === "shimol") {
+      yonalish = " garb";
+    } else if (yonalish === "garb") {
+      //garbdan chapga burilsa janubga
+      yonalish = "janub";
+    } else if (yonalish === "janub") {
+      //janubdan chapga sharq
+      yonalish = "sharq";
+    } else if (yonalish === "sharq") {
+      //sharqdan chapga shimol
+      yonalish = "shimol";
+    }
+    console.log(
+      `Robot chapga burildi ,hozirgi yonalish ${yonalish}ga qarab ketmoda`
+    );
+    break;
+  case "2":
+    if (yonalish === "shimol") {
+      //shimoldan ong sharq
+      yonalish = "sharq";
+    } else if (yonalish === "sharq") {
+      //sharqdan ong janub
+      yonalish = "janub";
+    } else if (yonalish === "janub") {
+      // janubdan ong garb
+      yonalish = "garb ";
+    } else if (yonalish === "garb") {
+      //garbdan ong shimol
+      yonalish = "shimol";
+    }
+    console.log(
+      `Robot o'ngga burildi ,hozirgi yonalish ${yonalish}ga  qarab ketmoda`
+    );
+    break;
+  default:
+    console.log("notog'ro komand");
+}
