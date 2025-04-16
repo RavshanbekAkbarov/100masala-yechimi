@@ -513,37 +513,146 @@
 // console.log(`${n} ${m}`);
 
 // 16-masala
-let yosh = +prompt("yodhingizni kiriting faqat 20dan 69gacha");
-let onliklar;
-let birliklar;
-if (20 <= yosh <= 69) {
-  onliklar = Math.floor(yosh / 10);
-  //math.floor bu yaxliutlar ekan 
-  birliklar = yosh % 10;
-}
-//ha ifni ichidagi elon qilingan qiymatni tashqaridan ololmas ekanman
-let resonlik;
-let resbirlik;
+// let yosh = +prompt("yodhingizni kiriting faqat 20dan 69gacha");
+// let onliklar;
+// let birliklar;
+// if (20 <= yosh <= 69) {
+//   onliklar = Math.floor(yosh / 10);
+//   //math.floor bu yaxliutlar ekan
+//   birliklar = yosh % 10;
+// }
+// //ha ifni ichidagi elon qilingan qiymatni tashqaridan ololmas ekanman
+// let resonlik;
+// let resbirlik;
 
-switch (onliklar) {
+// switch (onliklar) {
+//   case 2:
+//     resonlik = "yigirma";
+//     break;
+//   case 3:
+//     resonlik = "o'ttiz";
+//     break;
+//   case 4:
+//     resonlik = "qirq";
+//     break;
+//   case 5:
+//     resonlik = "ellik";
+//     break;
+//   case 6:
+//     resonlik = "oltmush";
+//     break;
+// }
+
+// switch (birliklar) {
+//   case 1:
+//     resbirlik = "bir";
+//     break;
+//   case 2:
+//     resbirlik = "ikki";
+//     break;
+//   case 3:
+//     resbirlik = "uch";
+//     break;
+//   case 4:
+//     resbirlik = "to'rt";
+//     break;
+//   case 5:
+//     resbirlik = "besh";
+//     break;
+//   case 6:
+//     resbirlik = "olti";
+//     break;
+//   case 7:
+//     resbirlik = "yetti";
+//     break;
+//   case 8:
+//     resbirlik = "sakkiz";
+//     break;
+//   case 9:
+//     resbirlik = "to'qqiz";
+//     break;
+// }
+// console.log(`${resonlik} ${resbirlik}`);
+
+// 18-masala
+let son = +prompt("100dan 999gacha sonlardan birini kiriting");
+
+let yuzlik;
+let onlik;
+let birlik;
+let resonlik = "";
+let reonlik = "";
+let resbirlik = "";
+
+if (son >= 100 && son <= 999) {
+  yuzlik = Math.floor(son / 100);
+  onlik = Math.floor((son / 10) % 10);
+  birlik = son % 10;
+}
+
+switch (yuzlik) {
+  case 1:
+    resonlik = "bir yuz";
+    break;
   case 2:
-    resonlik = "yigirma";
+    resonlik = "ikki yuz";
     break;
   case 3:
-    resonlik = "o'ttiz";
+    resonlik = "uch yuz";
     break;
   case 4:
-    resonlik = "qirq";
+    resonlik = "to'rt yuz";
     break;
   case 5:
-    resonlik = "ellik";
+    resonlik = "besh yuz";
     break;
   case 6:
-    resonlik = "oltmush";
+    resonlik = "olti yuz";
+    break;
+  case 7:
+    resonlik = "yetti yuz";
+    break;
+  case 8:
+    resonlik = "sakkiz yuz";
+    break;
+  case 9:
+    resonlik = "to'qqiz yuz";
     break;
 }
 
-switch (birliklar) {
+switch (onlik) {
+  case 1:
+    reonlik = "o'n";
+    break;
+  case 2:
+    reonlik = "yigirma";
+    break;
+  case 3:
+    reonlik = "o'ttiz";
+    break;
+  case 4:
+    reonlik = "qirq";
+    break;
+  case 5:
+    reonlik = "ellik";
+    break;
+  case 6:
+    reonlik = "oltmish";
+    break;
+  case 7:
+    reonlik = "yetmish";
+    break;
+  case 8:
+    reonlik = "sakson";
+    break;
+  case 9:
+    reonlik = "to'qson";
+    break;
+  default:
+    reonlik = "";
+}
+
+switch (birlik) {
   case 1:
     resbirlik = "bir";
     break;
@@ -571,5 +680,8 @@ switch (birliklar) {
   case 9:
     resbirlik = "to'qqiz";
     break;
+  default:
+    resbirlik = "";
 }
-console.log(`${resonlik} ${resbirlik}`);
+
+console.log(`${resonlik} ${reonlik} ${resbirlik}`);
