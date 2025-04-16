@@ -412,42 +412,104 @@
 // console.log(`lakatr ${yonalish}ga qarab turibdi`);
 
 // 12-masala
-let p = 3.14;
-let element = prompt(
-  "Doiraning radiusi yuzi  diametri yoki uzunligi qaysi birini kiritasiz "
-);
-let result;
-switch (element) {
-  case "radius":
-    let r = +prompt("doiraning radiusini kiriting");
-    let rd = 2 * r;
-    let rl = 2 * p * r;
-    let rs = p * r * r;
-    result = `radius berilganda diametr ${rd} uzunlik ${rl} yuza ${rs}`;
-    break;
+// let p = 3.14;
+// let element = prompt(
+//   "Doiraning radiusi yuzi  diametri yoki uzunligi qaysi birini kiritasiz "
+// );
+// let result;
+// switch (element) {
+//   case "radius":
+//     let r = +prompt("doiraning radiusini kiriting");
+//     let rd = 2 * r;
+//     let rl = 2 * p * r;
+//     let rs = p * r * r;
+//     result = `radius berilganda diametr ${rd} uzunlik ${rl} yuza ${rs}`;
+//     break;
 
-  case "diametr":
-    let d = +prompt("doiraning diametrini kiriting");
-    let dr = d / 2;
-    let dl = 2 * p * dr;
-    let ds = p * dr * dr;
-    result = `diametr berilganda radius ${dr} uzunlik ${dl} yuza ${ds}`;
-    break;
+//   case "diametr":
+//     let d = +prompt("doiraning diametrini kiriting");
+//     let dr = d / 2;
+//     let dl = 2 * p * dr;
+//     let ds = p * dr * dr;
+//     result = `diametr berilganda radius ${dr} uzunlik ${dl} yuza ${ds}`;
+//     break;
 
-  case "uzunligi":
-    let l = +prompt("doiraning uzunligini kiriting");
-    let lr = l / (2 * p);
-    let ld = 2 * lr;
-    let ls = p * lr * lr;
-    result = `uzunligi berilganda radiusi ${lr} diametri ${ld} yuza ${ls}`;
-    break;
+//   case "uzunligi":
+//     let l = +prompt("doiraning uzunligini kiriting");
+//     let lr = l / (2 * p);
+//     let ld = 2 * lr;
+//     let ls = p * lr * lr;
+//     result = `uzunligi berilganda radiusi ${lr} diametri ${ld} yuza ${ls}`;
+//     break;
 
-  case "yuzi":
-    let s = +prompt("doiraning yuzini kiriting");
-    let sr = Math.sqrt(s / p);
-    let sd = 2 * sr;
-    let sl = 2 * p * sr;
-    result = `yuzasi berilganda diametr ${sd} uzunlik ${sl} radiusi ${sr}`;
-    break;
-}
-console.log(result);
+//   case "yuzi":
+//     let s = +prompt("doiraning yuzini kiriting");
+//     let sr = Math.sqrt(s / p);
+//     let sd = 2 * sr;
+//     let sl = 2 * p * sr;
+//     result = `yuzasi berilganda diametr ${sd} uzunlik ${sl} radiusi ${sr}`;
+//     break;
+// }
+// console.log(result);
+
+// 15-masala
+// let M = +prompt("1 dan 4 gacha sonlardan birni kiriting");
+// let N = +prompt("6 dan 14 gacha sonlardan birni kiriting");
+
+// let m;
+// let n;
+
+// switch (M) {
+//   case 1:
+//     m = "g'isht";
+//     break;
+//   case 2:
+//     m = "olma";
+//     break;
+//   case 3:
+//     m = "chillak";
+//     break;
+//   case 4:
+//     m = "qarg'a";
+//     break;
+
+//   default:
+//     console.log("xato qiymat kiritdingiz");
+// }
+
+// switch (N) {
+//   case 6:
+//     n = "olti";
+//     break;
+//   case 7:
+//     n = "yetti";
+//     break;
+//   case 8:
+//     n = "sakkiz";
+//     break;
+//   case 9:
+//     n = "to'qqiz";
+//     break;
+//   case 10:
+//     n = "o'n ";
+//     break;
+//   case 11:
+//     n = "o'n bir";
+//     break;
+//   case 12:
+//     n = "o'n ikki";
+//     break;
+//   case 13:
+//     n = "o'n uch";
+//     break;
+//   case 14:
+//     n = "o'n to'rt";
+//     break;
+
+//   default:
+//     console.log("xato qiymat kiritdingiz");
+// }
+
+// console.log(`${n} ${m}`);
+
+
