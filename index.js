@@ -512,4 +512,64 @@
 
 // console.log(`${n} ${m}`);
 
+// 16-masala
+let yosh = +prompt("yodhingizni kiriting faqat 20dan 69gacha");
+let onliklar;
+let birliklar;
+if (20 <= yosh <= 69) {
+  onliklar = Math.floor(yosh / 10);
+  //math.floor bu yaxliutlar ekan 
+  birliklar = yosh % 10;
+}
+//ha ifni ichidagi elon qilingan qiymatni tashqaridan ololmas ekanman
+let resonlik;
+let resbirlik;
 
+switch (onliklar) {
+  case 2:
+    resonlik = "yigirma";
+    break;
+  case 3:
+    resonlik = "o'ttiz";
+    break;
+  case 4:
+    resonlik = "qirq";
+    break;
+  case 5:
+    resonlik = "ellik";
+    break;
+  case 6:
+    resonlik = "oltmush";
+    break;
+}
+
+switch (birliklar) {
+  case 1:
+    resbirlik = "bir";
+    break;
+  case 2:
+    resbirlik = "ikki";
+    break;
+  case 3:
+    resbirlik = "uch";
+    break;
+  case 4:
+    resbirlik = "to'rt";
+    break;
+  case 5:
+    resbirlik = "besh";
+    break;
+  case 6:
+    resbirlik = "olti";
+    break;
+  case 7:
+    resbirlik = "yetti";
+    break;
+  case 8:
+    resbirlik = "sakkiz";
+    break;
+  case 9:
+    resbirlik = "to'qqiz";
+    break;
+}
+console.log(`${resonlik} ${resbirlik}`);
