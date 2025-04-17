@@ -575,113 +575,125 @@
 // console.log(`${resonlik} ${resbirlik}`);
 
 // 18-masala
-let son = +prompt("100dan 999gacha sonlardan birini kiriting");
+// let son = +prompt("100dan 999gacha sonlardan birini kiriting");
 
-let yuzlik;
-let onlik;
-let birlik;
-let resonlik = "";
-let reonlik = "";
-let resbirlik = "";
+// let yuzlik;
+// let onlik;
+// let birlik;
+// let resonlik = "";
+// let reonlik = "";
+// let resbirlik = "";
 
-if (son >= 100 && son <= 999) {
-  yuzlik = Math.floor(son / 100);
-  onlik = Math.floor((son / 10) % 10);
-  birlik = son % 10;
+// if (son >= 100 && son <= 999) {
+//   yuzlik = Math.floor(son / 100);
+//   onlik = Math.floor((son / 10) % 10);
+//   birlik = son % 10;
+// }
+
+// switch (yuzlik) {
+//   case 1:
+//     resonlik = "bir yuz";
+//     break;
+//   case 2:
+//     resonlik = "ikki yuz";
+//     break;
+//   case 3:
+//     resonlik = "uch yuz";
+//     break;
+//   case 4:
+//     resonlik = "to'rt yuz";
+//     break;
+//   case 5:
+//     resonlik = "besh yuz";
+//     break;
+//   case 6:
+//     resonlik = "olti yuz";
+//     break;
+//   case 7:
+//     resonlik = "yetti yuz";
+//     break;
+//   case 8:
+//     resonlik = "sakkiz yuz";
+//     break;
+//   case 9:
+//     resonlik = "to'qqiz yuz";
+//     break;
+// }
+
+// switch (onlik) {
+//   case 1:
+//     reonlik = "o'n";
+//     break;
+//   case 2:
+//     reonlik = "yigirma";
+//     break;
+//   case 3:
+//     reonlik = "o'ttiz";
+//     break;
+//   case 4:
+//     reonlik = "qirq";
+//     break;
+//   case 5:
+//     reonlik = "ellik";
+//     break;
+//   case 6:
+//     reonlik = "oltmish";
+//     break;
+//   case 7:
+//     reonlik = "yetmish";
+//     break;
+//   case 8:
+//     reonlik = "sakson";
+//     break;
+//   case 9:
+//     reonlik = "to'qson";
+//     break;
+//   default:
+//     reonlik = "";
+// }
+
+// switch (birlik) {
+//   case 1:
+//     resbirlik = "bir";
+//     break;
+//   case 2:
+//     resbirlik = "ikki";
+//     break;
+//   case 3:
+//     resbirlik = "uch";
+//     break;
+//   case 4:
+//     resbirlik = "to'rt";
+//     break;
+//   case 5:
+//     resbirlik = "besh";
+//     break;
+//   case 6:
+//     resbirlik = "olti";
+//     break;
+//   case 7:
+//     resbirlik = "yetti";
+//     break;
+//   case 8:
+//     resbirlik = "sakkiz";
+//     break;
+//   case 9:
+//     resbirlik = "to'qqiz";
+//     break;
+//   default:
+//     resbirlik = "";
+// }
+
+// console.log(`${resonlik} ${reonlik} ${resbirlik}`);
+
+//for takrorlash opertoriga oid masalar
+// 10-masala
+
+let n = +prompt("n butun sonni kirtitng");
+let s=0;
+
+for (let i = 1; i <= n; i++) {
+  s += 1 / i;
 }
 
-switch (yuzlik) {
-  case 1:
-    resonlik = "bir yuz";
-    break;
-  case 2:
-    resonlik = "ikki yuz";
-    break;
-  case 3:
-    resonlik = "uch yuz";
-    break;
-  case 4:
-    resonlik = "to'rt yuz";
-    break;
-  case 5:
-    resonlik = "besh yuz";
-    break;
-  case 6:
-    resonlik = "olti yuz";
-    break;
-  case 7:
-    resonlik = "yetti yuz";
-    break;
-  case 8:
-    resonlik = "sakkiz yuz";
-    break;
-  case 9:
-    resonlik = "to'qqiz yuz";
-    break;
-}
-
-switch (onlik) {
-  case 1:
-    reonlik = "o'n";
-    break;
-  case 2:
-    reonlik = "yigirma";
-    break;
-  case 3:
-    reonlik = "o'ttiz";
-    break;
-  case 4:
-    reonlik = "qirq";
-    break;
-  case 5:
-    reonlik = "ellik";
-    break;
-  case 6:
-    reonlik = "oltmish";
-    break;
-  case 7:
-    reonlik = "yetmish";
-    break;
-  case 8:
-    reonlik = "sakson";
-    break;
-  case 9:
-    reonlik = "to'qson";
-    break;
-  default:
-    reonlik = "";
-}
-
-switch (birlik) {
-  case 1:
-    resbirlik = "bir";
-    break;
-  case 2:
-    resbirlik = "ikki";
-    break;
-  case 3:
-    resbirlik = "uch";
-    break;
-  case 4:
-    resbirlik = "to'rt";
-    break;
-  case 5:
-    resbirlik = "besh";
-    break;
-  case 6:
-    resbirlik = "olti";
-    break;
-  case 7:
-    resbirlik = "yetti";
-    break;
-  case 8:
-    resbirlik = "sakkiz";
-    break;
-  case 9:
-    resbirlik = "to'qqiz";
-    break;
-  default:
-    resbirlik = "";
-}
-
-console.log(`${resonlik} ${reonlik} ${resbirlik}`);
+console.log(s);
