@@ -689,11 +689,21 @@
 //for takrorlash opertoriga oid masalar
 // 10-masala
 
-let n = +prompt("n butun sonni kirtitng");
-let s=0;
+// let n = +prompt("n butun sonni kirtitng");
+// let s=0;
 
-for (let i = 1; i <= n; i++) {
-  s += 1 / i;
+// for (let i = 1; i <= n; i++) {
+//   s += 1 / i;
+// }
+
+// console.log(s);
+
+// 11-masala
+let n = +prompt("n butun sonni kirtitng");
+let s = 0;
+
+for (let i = n; i <= 2 * n; i++) {
+  s += i ** 2;
 }
 
 console.log(s);
