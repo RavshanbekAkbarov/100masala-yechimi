@@ -699,11 +699,21 @@
 // console.log(s);
 
 // 11-masala
-let n = +prompt("n butun sonni kirtitng");
-let s = 0;
+// let n = +prompt("n butun sonni kirtitng");
+// let s = 0;
 
-for (let i = n; i <= 2 * n; i++) {
-  s += i ** 2;
-}
+// for (let i = n; i <= 2 * n; i++) {
+//   s += i ** 2;
+// }
 
-console.log(s);
+// console.log(s);
+
+// 12-masala
+// let n = +prompt("n butun sonni kirtitng");
+// let s = 1;
+
+// for (let i = 1; i <= n; i++) {
+//   s *= (i + 10) / 10;
+// }
+
+// console.log(s);
