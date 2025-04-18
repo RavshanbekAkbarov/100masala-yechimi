@@ -717,3 +717,15 @@
 // }
 
 // console.log(s);
+
+// 13-masala
+//logika - va + qilish uchun -1 ning i inchi daajasiga yana -1 ni kopaytirib ketildi  
+let n = +prompt("n sonini kiriting (n > 0)");
+let s = 0;
+
+for (let i = 1; i <= n; i++) {
+  let ishora = (-1) ** i * -1;
+  s += ishora * ((i + 10) / 10);
+}
+
+console.log(s);
